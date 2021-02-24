@@ -1,9 +1,16 @@
+import styles from '../styles/components/Profile.module.css'
+
 export function Profile() {
   return (
-    <div>
+    <div className={styles.profileContainer}>
       <img src="https://github.com/capudougmor.png" alt="foto perfil"/>
-      <strong>Douglas Mendes</strong>
-      <p>Level 1</p>
+      <div>
+        <strong>Douglas Mendes</strong>
+        <p>
+          <img src="icons/level.svg" />
+          Level 1
+        </p>
+      </div>
     </div>
   )
 }
